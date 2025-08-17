@@ -10,6 +10,8 @@ Sebuah *static landing page* yang dibuat sebagai *Capstone Project Code Generati
 
 ![Desktop Demo Video](https://github.com/user-attachments/assets/c137219c-3b36-42a0-9809-7c809782dbd0)
 
+<img width="1174" height="671" alt="head1" src="https://github.com/user-attachments/assets/6bed50f0-29e3-4622-89ca-ca861c782d4b" />
+
 ---
 
 ## Fitur Unggulan
