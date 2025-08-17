@@ -43,7 +43,7 @@ Proyek ini dilengkapi dengan berbagai fitur modern untuk meningkatkan pengalaman
 
 ## Penjelasan Dukungan AI
 
-Dalam proyek ini, AI (IBM Granite) berperan sebagai **asisten pengembangan iteratif**. Prosesnya tidak hanya sekali jalan, melainkan sebuah dialog berkelanjutan untuk membangun dan menyempurnakan fitur:
+Dalam proyek ini, AI (IBM Granite ibm-granite/granite-3.3-8b-instruct) berperan sebagai **asisten pengembangan iteratif**. Prosesnya tidak hanya sekali jalan, melainkan sebuah dialog berkelanjutan untuk membangun dan menyempurnakan fitur:
 1.  **Generasi Awal:** AI digunakan untuk membuat kerangka dasar HTML, CSS, dan logika JavaScript awal berdasarkan prompt terstruktur.
 2.  **Debugging & Refactoring:** Output awal dari AI seringkali tidak lengkap atau memiliki bug. AI digunakan untuk membantu mengidentifikasi masalah (seperti konflik animasi) dan memberikan solusi perbaikan.
 3.  **Implementasi Fitur Lanjutan:** Untuk fitur kompleks seperti *scroll reveal animation* (menggunakan Intersection Observer) dan *advanced glitch effect* (menggunakan pseudo-elements dan `clip-path`), AI diminta untuk membuat *snippet* kode spesifik yang kemudian diintegrasikan dan disesuaikan ke dalam proyek.
