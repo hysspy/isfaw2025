@@ -6,7 +6,7 @@ Sebuah *static landing page* yang dibuat sebagai *Capstone Project Code Generati
 
 **Live Netlify Link:** **[https://isfaw2025.netlify.app/]**
 
-## Tampilan Proyek
+## Tampilan
 
 ![Desktop Demo Video](https://github.com/user-attachments/assets/c137219c-3b36-42a0-9809-7c809782dbd0)
 
