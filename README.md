@@ -23,10 +23,14 @@ Proyek ini dilengkapi dengan berbagai fitur modern untuk meningkatkan pengalaman
 * **Teks Animasi Glowing:** Judul utama dan teks penting memiliki efek kelap-kelip seperti lampu neon yang dinamis.
 * **Advanced Glitch Effect:** Gambar artis akan mengalami distorsi *glitch* (termasuk aberasi warna dan *clip-path*) saat kursor *hover*, memperkuat tema secara interaktif.
 
+<img width="1208" height="818" alt="head2" src="https://github.com/user-attachments/assets/6bf43f7f-3f72-427a-82cb-b7278bb42d67" />
+
 #### **UX & Interaktivitas:**
 * **Animasi Pembuka:** Efek *staggered fade-in* yang sinematik pada elemen *hero section* saat halaman pertama kali dimuat.
 * **Scroll Reveal Animation:** Setiap bagian konten akan muncul dengan animasi halus saat pengguna menggulir halaman ke bawah.
 * **Smooth Scrolling:** Navigasi gulir yang mulus di seluruh halaman.
+
+<img width="1197" height="825" alt="head3" src="https://github.com/user-attachments/assets/d6a50c54-7fea-430a-acba-1d2f11fce506" />
 
 ---
 
