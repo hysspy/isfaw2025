@@ -22,6 +22,7 @@ Proyek ini dilengkapi dengan berbagai fitur modern untuk meningkatkan pengalaman
 * **Desain Cyberpunk:** Palet warna neon, font digital, dan background gelap yang menciptakan suasana futuristik.
 * **Teks Animasi Glowing:** Judul utama dan teks penting memiliki efek kelap-kelip seperti lampu neon yang dinamis.
 * **Advanced Glitch Effect:** Gambar artis akan mengalami distorsi *glitch* (termasuk aberasi warna dan *clip-path*) saat kursor *hover*, memperkuat tema secara interaktif.
+* **Countdown Dinamis:** "Timer menghitung mundur hingga akhir acara.
 
 <img width="1208" height="818" alt="head2" src="https://github.com/user-attachments/assets/6bf43f7f-3f72-427a-82cb-b7278bb42d67" />
 
