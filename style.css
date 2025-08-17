@@ -1,0 +1,427 @@
+/* ======================================== */
+/* 1. GLOBAL STYLES & VARIABLES             */
+/* ======================================== */
+
+/* Variabel Warna Terpusat */
+:root {
+    --bg-color: #0c0a0f; /* Hitam dengan sedikit nuansa ungu */
+    --text-color: #EAEAEA;
+    --neon-magenta: #FF00FF;
+    --neon-cyan: #00FFFF;
+    --neon-yellow: #FFFF00;
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Rajdhani', sans-serif;
+}
+
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-image: linear-gradient(rgba(12, 10, 15, 0.95), rgba(12, 10, 15, 0.95)), url('images/background2.jpg');
+    background-attachment: center; /* Membuat background diam */
+    color: var(--text-color);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--neon-cyan);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+    border-top: 1px solid rgba(0, 255, 255, 0.2); /* Garis pemisah antar section */
+}
+
+
+/* ======================================== */
+/* 2. HERO SECTION                          */
+/* ======================================== */
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(12, 10, 15, 0.7), rgba(12, 10, 15, 1)), url('images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: center; /* <-- INI KUNCI EFEK PARALLAX */
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    text-shadow: 0 0 15px var(--neon-magenta), 0 0 25px var(--neon-magenta);
+    margin-bottom: 10px;
+}
+
+.hero-section .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.hero-section .event-info {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.hero-section .event-info span {
+    margin: 0 15px;
+}
+
+.countdown-timer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.timer-box {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--neon-cyan);
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.timer-box span {
+    display: block;
+    font-size: 2.5rem;
+    font-family: var(--font-heading);
+    color: var(--neon-yellow);
+}
+
+.timer-box span:last-child {
+    font-size: 1rem;
+    font-family: var(--font-body);
+    color: var(--text-color);
+}
+
+
+/* ======================================== */
+/* 3. LINEUP SECTION                        */
+/* ======================================== */
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.artist-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--neon-magenta);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--neon-magenta);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.artist-card h3 {
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    color: var(--neon-magenta);
+}
+
+
+/* ======================================== */
+/* 4. SCHEDULE & OTHER SECTIONS             */
+/* ======================================== */
+
+.schedule-section table {
+    width: 100%;
+    /* Tambahkan max-width agar tabel tidak terlalu lebar di layar besar */
+    max-width: 700px; 
+    /* Baris ini akan membuat tabel berada di tengah section */
+    margin: 0 auto; 
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+.schedule-section th, .schedule-section td {
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+    font-size: 1.5rem;
+}
+
+.schedule-section th {
+    font-family: var(--font-heading);
+    color: var(--neon-cyan);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    border-color: var(--neon-yellow);
+}
+
+.ticket-info-box {
+    border: 2px dashed var(--neon-yellow);
+    padding: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ticket-info-box h3 {
+    color: var(--neon-yellow);
+    margin-bottom: 15px;
+}
+
+
+/* ======================================== */
+/* 5. FOOTER & RESPONSIVE DESIGN            */
+/* ======================================== */
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* Media Query untuk Mobile */
+@media (max-width: 768px) {
+    h1 { font-size: 3rem !important; }
+    h2 { font-size: 2rem; }
+
+    .hero-section .event-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .countdown-timer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .timer-box {
+        width: 100px;
+        padding: 10px;
+    }
+    
+    .timer-box span { font-size: 1.8rem; }
+    .timer-box span:last-child { font-size: 0.8rem; }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ======================================== */
+/* 6. EFEK ANIMASI GLOWING CYBERPUNK        */
+/* ======================================== */
+
+/* Definisikan animasi kelap-kelip */
+@keyframes cyberpunk-flicker {
+    0%   { color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px #fff; }
+    20%  { color: var(--neon-magenta); text-shadow: 0 0 10px var(--neon-magenta), 0 0 25px var(--neon-magenta); }
+    40%  { color: var(--neon-yellow); text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px #fff; }
+    60%  { color: #fff; text-shadow: 0 0 15px #fff, 0 0 25px var(--neon-cyan); }
+    80%  { color: var(--neon-magenta); text-shadow: 0 0 10px var(--neon-magenta), 0 0 30px var(--neon-magenta); }
+    /* Efek 'flicker' atau kedipan singkat */
+    90%  { color: #333; text-shadow: none; opacity: 0.8; }
+    92%  { color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan); opacity: 1; }
+    100% { color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px #fff; }
+}
+  
+  /* Class untuk menerapkan animasi */
+  /* Class ini menggabungkan animasi pembuka (fadeInUp) 
+   dan animasi kelap-kelip (cyberpunk-flicker) secara berurutan. */
+.cyberpunk-glow {
+    /* Animasi 1: Muncul sekali. Animasi 2: Kelap-kelip selamanya */
+    animation: fadeInUp 1s ease-out forwards, 
+             cyberpunk-flicker 20s infinite 1.2s;
+}
+
+/* ======================================== */
+/* 7. SCROLL REVEAL ANIMATION               */
+/* ======================================== */
+
+/* Sembunyikan section pada awalnya */
+section {
+    opacity: 0; /* Mulai dari transparan */
+    transform: translateY(90px); /* Mulai dari posisi 40px lebih rendah */
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+/* State 'aktif' saat section terlihat */
+section.visible {
+    opacity: 1; /* Muncul penuh */
+    transform: translateY(0); /* Kembali ke posisi semula */
+}
+
+/* ======================================== */
+/* 8. ANIMASI PEMBUKA HOMEPAGE              */
+/* ======================================== */
+
+/* Definisikan animasi fade-in dan naik */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(90px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Terapkan animasi ke setiap elemen di hero section */
+  .hero-section > .container > * {
+      /* Sembunyikan semua elemen di awal */
+      opacity: 0; 
+      /* Terapkan animasi fadeInUp */
+      animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  /* Atur jeda (delay) untuk setiap elemen agar muncul berurutan */
+  .hero-section .tagline {
+      animation-delay: 0.5s;
+  }
+  
+  .hero-section .event-info {
+      animation-delay: 0.8s;
+  }
+  
+  .hero-section .countdown-timer {
+      animation-delay: 1.1s;
+  }
+
+/* ======================================== */
+/* 9. ADVANCED GLITCH EFFECT                */
+/* ======================================== */
+
+/* Siapkan container untuk efek glitch */
+.artist-card {
+    position: relative; /* Wajib ada untuk posisi pseudo-elements */
+}
+
+/* Terapkan animasi saat hover */
+.artist-card:hover img {
+    animation: glitch-image 0.8s steps(2, end) infinite;
+}
+
+.artist-card:hover::before,
+.artist-card:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: glitch-lines 0.8s steps(2, end) infinite;
+}
+
+/* Garis aberasi warna (Cyan) */
+.artist-card:hover::before {
+    box-shadow: 2px 0 var(--neon-cyan);
+}
+
+/* Garis aberasi warna (Magenta) */
+.artist-card:hover::after {
+    box-shadow: -2px 0 var(--neon-magenta);
+    /* Jalankan animasi garis magenta dengan jeda */
+    animation-delay: 0.2s; 
+}
+
+/* Animasi untuk gambar (distorsi kliping) */
+@keyframes glitch-image {
+  0% {
+    clip-path: inset(51% 0 29% 0);
+    transform: translate(0, 0);
+  }
+  20% {
+    clip-path: inset(68% 0 10% 0);
+    transform: translate(-10px, 5px);
+  }
+  40% {
+    clip-path: inset(19% 0 58% 0);
+    transform: translate(5px, -5px);
+  }
+  60% {
+    clip-path: inset(33% 0 43% 0);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: inset(79% 0 15% 0);
+    transform: translate(5px, 0);
+  }
+  100% {
+    clip-path: inset(42% 0 33% 0);
+    transform: translate(0, 0);
+  }
+}
+
+/* Animasi untuk garis warna */
+@keyframes glitch-lines {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(5px, -5px);
+  }
+  60% {
+    transform: translate(-5px, 10px);
+  }
+  80% {
+    transform: translate(10px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
